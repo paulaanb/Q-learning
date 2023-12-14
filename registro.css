@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 10%; /* Modificado para adaptarse al 10% del ancho de la pantalla */
+    height: auto;
+}
+
+.container {
+    position: relative;
+    width: 80%; /* Modificado para adaptarse al 80% del ancho de la pantalla */
+    height: 70%; /* Modificado para adaptarse al 70% de la altura de la pantalla */
+    margin-top: 30px; /* Ajusta según sea necesario */
+}
+
+.mirror {
+    text-align: center;
+}
+
+.formulario_inicio {
+    width: 70%; /* Modificado para adaptarse al 70% del ancho de la pantalla */
+    padding: 3%; /* Modificado para adaptarse al 3% del ancho de la pantalla */
+    background-color: #fff;
+    margin: 15px auto; /* Modificado para adaptarse al 15px de margen en la parte superior e inferior */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px; /* Modificado para adaptarse al 10px de margen superior */
+    color: #555;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px; /* Modificado para adaptarse al 8px de relleno */
+    margin: 6px 0; /* Modificado para adaptarse al 6px de margen superior e inferior */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    top: 1%;
+}
+
+select {
+    appearance: none;
+}
+
+button {
+    background-color: rgb(37, 116, 200);
+    color: white;
+    padding: 12px 16px; /* Modificado para adaptarse al 12px de relleno arriba y abajo, 16px de relleno a los lados */
+    margin: 10px 0; /* Modificado para adaptarse al 10px de margen superior e inferior */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilos adicionales para mejorar la apariencia en dispositivos más pequeños */
+@media only screen and (max-width: 400px) {
+    .formulario_inicio {
+        width: 90%;
+    }
+}
